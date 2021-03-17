@@ -1,5 +1,6 @@
 #https://programmers.co.kr/learn/courses/30/lessons/68935?language=python3
 
+
 def solution(inp):
     threes = []
     while inp>0:
@@ -10,7 +11,6 @@ def solution(inp):
     answer = sum([3**a * threes[-(a+1)] for a in range(len(threes))])
 
     return answer
-
 
 
 if __name__ == "__main__":
