@@ -32,5 +32,5 @@ def solution(new_id):
 
 if __name__ == "__main__":
     ni = 	"...!@BaT#*..y.abcdefghijklm"
-    return solution(ni)
+    solution(ni)
     # "bat.y.abcdefghi"

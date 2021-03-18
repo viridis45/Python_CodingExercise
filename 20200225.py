@@ -12,4 +12,4 @@ def solution(participant, completion):
 if __name__ == "__main__":
     p = ["mislav", "stanko", "mislav", "ana"]
     c = ["stanko", "ana", "mislav"]
-    return solution(p,c)
+    solution(p,c)

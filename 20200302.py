@@ -21,4 +21,4 @@ def solution2(array, commands):
 if __name__ == "__main__":
     ar = 	[1, 5, 2, 6, 3, 7, 4]
     com = [[2, 5, 3], [4, 4, 1], [1, 7, 3]]
-    return solution(ar, com) #solution2(ar, com)
+    solution(ar, com) #solution2(ar, com)
