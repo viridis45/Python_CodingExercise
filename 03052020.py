@@ -7,4 +7,4 @@ def solution(a):
 
 
 if __name__ == "__main__":
-    return solution('qwer') #'we'
+    solution('qwer') #'we'

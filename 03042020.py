@@ -14,4 +14,4 @@ def solution(inp):
 
 
 if __name__ == "__main__":
-    return solution(45) #7
+    solution(45) #7

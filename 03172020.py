@@ -7,4 +7,4 @@ def solution(n):
 
 
 if __name__ == "__main__":
-    return solution(12) #28
+    solution(12) #28
