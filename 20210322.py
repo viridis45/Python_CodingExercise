@@ -7,4 +7,4 @@ def solution(n : int) -> int:
 
 
 if __name__ == "__main__":
-    solution(121)
+    solution(121) #144
