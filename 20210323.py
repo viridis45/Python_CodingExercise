@@ -2,8 +2,13 @@
 
 
 def solution(lis : list) -> list:
-    lis.remove(min(lis))
-    return lis if len(lis)>0 else [-1]
+    lis2 = [a for a in list if a!= min(lis)]
+    return lis2 if len(lis2)>0 else [-1]
+
+
+def solution2(lis:list)->list:
+    minnum = min(lis)
+    return [-1] if {minnum} == set(lis) else list(filter(lambda x: x!=minnum, lis))
 
 
 if __name__ == "__main__":
