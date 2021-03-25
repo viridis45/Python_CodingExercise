@@ -1,6 +1,7 @@
 # https://programmers.co.kr/learn/courses/30/lessons/67256
 
 
+
 def solution(numbers, hand):
     def getdist(a, b):
         x1, x2 = ((a+2)%3)+1, ((b+2)%3)+1
