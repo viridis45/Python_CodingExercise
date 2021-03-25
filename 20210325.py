@@ -4,6 +4,7 @@
 def solution(numbers, hand):
     def getdist(a, b):
         x1, x2 = ((a+2)%3)+1, ((b+2)%3)+1
+        y1, y2 = (a-1)//3+1, (b-1)//3+1
         return (((x1 - x2)**2)**(1/2))+(((y1 - y2)**2)**(1/2)) #절대값
 
     def main(numbers:list, hand:str)->list:
@@ -14,6 +15,7 @@ def solution(numbers, hand):
             if i in [1,4,7,10]:
                 L = i
                 trace.append('L')
+            elif i in [2,5,8,11]:
                 Ld, Rd = getdist(L, i), getdist(R,i)
                 if Ld<Rd or (Ld==Rd and hand=='left'):
                     L = i
