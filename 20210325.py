@@ -8,7 +8,7 @@ def solution(numbers, hand):
         return (((x1 - x2)**2)**(1/2))+(((y1 - y2)**2)**(1/2)) #절대값
 
     def main(numbers:list, hand:str)->list:
-        L, R, trace = 11, 12, []
+        L, R, trace = 10, 12, []
         for i in numbers:
             if i == 0 :
                 i = 11
