@@ -27,5 +27,13 @@ def solution(numbers, hand):
                 R = i
                 trace.append('R')
         return ''.join(trace)
+        
     ans = main(numbers, hand)
     return ans
+
+
+
+if __name__ == "__main__":
+    numbers, hand = [7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2], "left"
+    solution(numbers, hand) # "LRLLRRLLLRR"
+
