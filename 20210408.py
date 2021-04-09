@@ -6,6 +6,9 @@ def solution(N, stages):
     players = len(stages)
     for i in range(1,N+1):
         a = res.count(i)
+        if players == 0:
+            score.append(0)
+            continue
         score.append(a/players)
         players -= a
     
