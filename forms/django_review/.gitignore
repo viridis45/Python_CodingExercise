@@ -1,0 +1,6 @@
+# ignore contents
+env/*
+
+
+# exception
+#!Data_2021/.gitkeep
