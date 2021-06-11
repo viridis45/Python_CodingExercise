@@ -6,7 +6,11 @@ from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
 
-from .models import Choice, Question
+from rest_framework import viewsets
+
+from .serializers import TesterSerializer
+
+from .models import Choice, Question, TesterModel
 
 
 # # def vote(request, question_id):
@@ -118,3 +122,5 @@ def vote(request, question_id):
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
+
+

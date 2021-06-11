@@ -1,5 +1,8 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
+
+
+
 
 app_name = 'polls'
 # urlpatterns = [
@@ -16,5 +19,6 @@ urlpatterns = [
     path('<int:pk>/', views.DetailView.as_view(), name='detail'),
     path('<int:pk>/results/', views.ResultView.as_view(), name='results'),
     path('<int:question_id>/vote/', views.vote, name='vote'),
-
+    path('tester-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    
 ]
